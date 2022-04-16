@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Parcialimc">
         <activity
+            android:name=".Calculadora"
+            android:exported="false" />
+        <activity
+            android:name=".Temperatura"
+            android:exported="false" />
+        <activity
+            android:name=".Resultado"
+            android:exported="false" />
+        <activity
+            android:name=".Imc"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

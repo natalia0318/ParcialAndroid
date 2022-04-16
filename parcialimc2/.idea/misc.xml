@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/Parcial1/ParcialAndroid/parcialimc2/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Parcial1/ParcialAndroid/parcialimc2/app/src/main/res/layout/activity_calculadora.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Parcial1/ParcialAndroid/parcialimc2/app/src/main/res/layout/activity_imc.xml" value="0.18" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Parcial1/ParcialAndroid/parcialimc2/app/src/main/res/layout/activity_main.xml" value="0.21" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Parcial1/ParcialAndroid/parcialimc2/app/src/main/res/layout/activity_resultado.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Parcial1/ParcialAndroid/parcialimc2/app/src/main/res/layout/activity_temperatura.xml" value="0.17074275362318841" />
       </map>
     </option>
   </component>
