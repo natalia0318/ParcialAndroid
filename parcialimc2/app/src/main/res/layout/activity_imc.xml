@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteY="46dp">
 
         <EditText
-            android:id="@+id/altura"
+            android:id="@+id/txtAltura"
             android:layout_width="232dp"
             android:layout_height="91dp"
             android:layout_marginTop="60dp"
@@ -32,7 +32,7 @@
             app:layout_constraintVertical_bias="0.52" />
 
         <EditText
-            android:id="@+id/peso"
+            android:id="@+id/txtPeso"
             android:layout_width="239dp"
             android:layout_height="80dp"
             android:layout_marginBottom="76dp"

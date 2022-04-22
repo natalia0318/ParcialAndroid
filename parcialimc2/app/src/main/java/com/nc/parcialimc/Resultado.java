@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.BreakIterator;
+
 public class Resultado extends AppCompatActivity implements View.OnClickListener{
     public TextView textViewNombre;
     public ImageView ImagenImc;
@@ -41,25 +43,31 @@ public class Resultado extends AppCompatActivity implements View.OnClickListener
         textViewResultado = findViewById(R.id.textViewResultado);
         btnInicioRe = findViewById(R.id.btnInicioRe);
 
+
     }
+
+
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.btnInicioRe:
                 InicioAction();
 
-
         }
+
     }
+
 
     private void InicioAction() {
-        Toast.makeText(this,"Formulario", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(Resultado.this,MainActivity.class);
-        startActivity(intent);
-    }
+                Toast.makeText(this, "Formulario", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(Resultado.this, MainActivity.class);
+                startActivity(intent);
+            }
+
+
+        }
 
 
 
-    }
 

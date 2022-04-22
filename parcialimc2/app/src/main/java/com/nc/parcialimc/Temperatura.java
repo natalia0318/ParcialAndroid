@@ -19,7 +19,7 @@ public class Temperatura extends AppCompatActivity implements View.OnClickListen
     public RadioButton radioButtonK;
     public TextView Cels;
     public TextView faren;
-    public TextView kelsi;
+    public TextView kelvin;
     public Button btnCalTemp;
     public TextView CalC;
     public TextView CalcF;
@@ -52,7 +52,7 @@ public class Temperatura extends AppCompatActivity implements View.OnClickListen
         radioButtonK = findViewById(R.id.radioButtonK);
         Cels = findViewById(R.id.Cels);
         faren = findViewById(R.id.faren);
-        kelsi = findViewById(R.id.kelsi);
+        kelvin = findViewById(R.id.kelvin);
         btnCalTemp = findViewById(R.id.btnCalTemp);
         CalC = findViewById(R.id.CalC);
         CalcF= findViewById(R.id.CalcF);

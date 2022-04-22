@@ -10,10 +10,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class Imc extends AppCompatActivity implements View.OnClickListener {
     public EditText nombre2;
-    public EditText peso;
-    public EditText altura;
+    public EditText txtPeso;
+    public EditText txtAltura;
     public Button btnCalcular;
     public Button btnInicio;
 
@@ -42,25 +43,35 @@ public class Imc extends AppCompatActivity implements View.OnClickListener {
     private void setContentAttributes() {
 
         nombre2 = findViewById(R.id.nombre);
-        peso = findViewById(R.id.peso);
-        altura = findViewById(R.id.altura);
+        txtPeso = findViewById(R.id.txtPeso);
+        txtAltura = findViewById(R.id.txtAltura);
         btnCalcular = findViewById(R.id.btnCalcular);
         btnInicio = findViewById(R.id.btnInicio);
+        txtPeso.setOnClickListener(this);
+        txtAltura.setOnClickListener(this);
 
 
     }
 
-
+    public Double Calcular (double peso, double altura){
+        double Imc = 0;
+        Imc = peso / (altura*altura);
+        return Imc;
+    }
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnCalcular:
                 CalcularAction();
 
+                Double peso = Double.parseDouble(txtPeso.getText().toString);
+                Double altura = Double.parseDouble(txtAltura.getText().toString);
+                Double Imc = Calcular(peso, altura);
+
+                Toast.makeText(this, text:"Su Imc es:"+ Imc,Toast.LENGTH_LONG).Show();
 
         }
     }
-
     private void CalcularAction() {
         //Toast.makeText(this,"Formulario", Toast.LENGTH_LONG).show();
         Intent intent = new Intent(Imc.this, Resultado.class);
