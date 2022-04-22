@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
     private void ImcAction() {
-        //Toast.makeText(this,"Formulario", Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"Formulario", Toast.LENGTH_LONG).show();
         Intent intent = new Intent(MainActivity.this,Imc.class);
         startActivity(intent);
 

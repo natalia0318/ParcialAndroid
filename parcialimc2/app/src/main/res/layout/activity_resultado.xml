@@ -8,7 +8,7 @@
     tools:context=".Resultado">
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnInicioRe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="68dp"
@@ -23,24 +23,37 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="209dp"
-        android:layout_height="84dp"
-        android:layout_marginBottom="112dp"
+        android:id="@+id/textViewResultado"
+        android:layout_width="232dp"
+        android:layout_height="103dp"
+        android:layout_marginBottom="104dp"
         android:text="Resultado"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/btnInicioRe"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewNombre"
         android:layout_width="211dp"
         android:layout_height="55dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintBottom_toTopOf="@+id/textViewResultado"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.158" />
+        app:layout_constraintVertical_bias="0.043" />
+
+    <ImageView
+        android:id="@+id/ImagenImc"
+        android:layout_width="317dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombre"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/imc" />
 </androidx.constraintlayout.widget.ConstraintLayout>

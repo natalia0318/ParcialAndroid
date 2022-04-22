@@ -8,76 +8,76 @@
     tools:context=".Temperatura">
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/radioButtonC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
         android:layout_marginBottom="52dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintBottom_toTopOf="@+id/Cels"
         app:layout_constraintStart_toStartOf="parent" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/radioButtonF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
         android:layout_marginBottom="52dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView10"
-        app:layout_constraintStart_toEndOf="@+id/radioButton" />
+        app:layout_constraintBottom_toTopOf="@+id/Kelsi"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonC" />
 
     <RadioButton
-        android:id="@+id/radioButton3"
+        android:id="@+id/radioButtonK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="52dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintBottom_toTopOf="@+id/Kelsi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toEndOf="@+id/radioButton2" />
+        app:layout_constraintStart_toEndOf="@+id/radioButtonF" />
 
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="25dp"
-        android:layout_height="45dp"
+        android:id="@+id/Cels"
+        android:layout_width="40dp"
+        android:layout_height="52dp"
         android:layout_marginStart="80dp"
-        android:layout_marginBottom="108dp"
+        android:layout_marginBottom="100dp"
         android:text="C"
         android:textColor="#0E0D0D"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalTemp"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView10"
-        android:layout_width="25dp"
-        android:layout_height="45dp"
+        android:id="@+id/faren"
+        android:layout_width="33dp"
+        android:layout_height="59dp"
         android:layout_marginStart="88dp"
-        android:layout_marginBottom="108dp"
+        android:layout_marginBottom="92dp"
         android:text="F"
         android:textColor="#0E0D0D"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
-        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalTemp"
+        app:layout_constraintEnd_toStartOf="@+id/Kelsi"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView9" />
+        app:layout_constraintStart_toEndOf="@+id/Cels" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="25dp"
-        android:layout_height="45dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="112dp"
+        android:id="@+id/Kelsi"
+        android:layout_width="38dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="96dp"
         android:text="K"
         android:textColor="#0E0D0D"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalTemp"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btnCalTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="312dp"
@@ -92,7 +92,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/btnInicioTem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="212dp"
@@ -104,48 +104,41 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.857"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCalTemp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewNTemp"
         android:layout_width="198dp"
         android:layout_height="48dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton2"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.337" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
+    <TextView
+        android:id="@+id/CalC"
+        android:layout_width="172dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCalTemp" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="132dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/CalcF"
+        android:layout_width="171dp"
+        android:layout_height="63dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btnInicioTem"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CalC"
+        app:layout_constraintVertical_bias="0.609" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
