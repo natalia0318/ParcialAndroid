@@ -42,12 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnImc = findViewById(R.id.btnImc);
         btnTem = findViewById(R.id.btnTem);
         btnCalc = findViewById(R.id.btnCalc);
-
-
-
-
     }
-
 
     @Override
     public void onClick(View v) {
