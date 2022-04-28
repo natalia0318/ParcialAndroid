@@ -38,15 +38,8 @@ import android.widget.Toast;
       protected void onCreate(Bundle savedInstanceState) {
           super.onCreate(savedInstanceState);
           setContentView(R.layout.activity_calculadora);
-          SharedPreferences spGet = getSharedPreferences("nombreUsuario", MODE_PRIVATE);
-          String name = spGet.getString("Nombre", "NA");
-          Toast.makeText(getApplicationContext(), " " + name, Toast.LENGTH_LONG).show();
-          setContentAttributes();
-          setContentViewEvents();
-          SharedPreferences sp = getSharedPreferences("nombreUsuario", MODE_PRIVATE);
-          SharedPreferences.Editor editor = sp.edit();
-          editor.putString("Nombre", "Natalia");
-          editor.commit();
+          btnIgual.setOnClickListener(this);
+          Toast.makeText(this, "Bienvenido: " + textViewN, Toast.LENGTH_SHORT).show();
       }
 
       private void setContentViewEvents() {
@@ -123,12 +116,13 @@ import android.widget.Toast;
                   Double valor1 = Double.parseDouble(btnUno.getText().toString());
                   Double valor2 = Double.parseDouble(btnCinco.getText().toString());
 
-                  String operador = btnSuma.getSelectedItem().toString();
-                  Double basic = Calculadora(valor1, valor2, operador);
-                  Toast.makeText(this, "El resultado  es: " + basic, Toast.LENGTH_LONG).show();
+                  String operador = btnSuma.getText().toString();
+                  Double Calculo = Calculadora(valor1, valor2, operador);
+                  Toast.makeText(this, "El resultado  es: " + Calculo, Toast.LENGTH_LONG).show();
               }
 
 
           }
 
       }
+  }
